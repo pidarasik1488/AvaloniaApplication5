@@ -1,0 +1,38 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
+        x:Class="AvaloniaApplication5.MainWindow"
+        Title="Poрno" Background="gray"
+        CanResize="False"
+        WindowState="FullScreen"
+        >
+    <Grid ShowGridLines="False" 
+          RowDefinitions= "* * * * * *"
+          ColumnDefinitions="* * *">
+		<Image Source="/www.jpg" Opacity="0.7" x:Name="d" Width="2300" Height="2300" Grid.Column="1" Grid.Row="3"/>
+        <CheckBox Content="⬅ Вы Аутист???" FontSize="26" VerticalAlignment="Center" Margin="11 5 0 0"  IsCheckedChanged="CheckBox_IsCheckedChanged" x:Name="sas"/>
+			
+        <Border Background="White" Width="300" Height="80" VerticalAlignment="Bottom"  Opacity="0.97" Padding="5" CornerRadius="50" ZIndex="-1" Grid.Column="1" Grid.Row="1"/>
+			
+        
+        <TextBlock Foreground="Black" ZIndex="1" Text="0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="60" x:Name="gog"   />
+        
+
+        
+        <Button CornerRadius="50" HorizontalAlignment="Center" Content="Subscribe" Background="Red" Grid.Row="3" Grid.Column="1"  Width="600" Height="165" VerticalAlignment="Center"  FontSize="120" Click="Button_Click" Focusable="False"/>
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="6">
+			<Label Content="Пароль:" FontSize="20" VerticalAlignment="Center" Margin="0 0 3 0"/>
+            <TextBox CornerRadius="50" Width="200" Height="20" VerticalAlignment="Center" PasswordChar="*" x:Name="g" TextChanged="g_TextChanged"/>
+
+        </StackPanel>
+
+    </Grid>
+
+
+
+
+    
+</Window>
+
