@@ -11,16 +11,30 @@
     <Grid ShowGridLines="False" 
           RowDefinitions= "* * * * * *"
           ColumnDefinitions="* * *">
-		<Image Source="/www.jpg" Opacity="0.7" x:Name="d" Width="2300" Height="2300" Grid.Column="1" Grid.Row="3"/>
+		<Image Source="/www.jpg" Opacity="0.7" IsVisible="True" x:Name="oboi0" Width="2300" Height="2300" Grid.Column="1" Grid.Row="3"/>
+		<Image Source="/oboi/oboi1.png" IsVisible="False" Opacity="0.7" x:Name="oboi1" Width="2300" Height="2300" Grid.Column="1" Grid.Row="3"/>
+		<Image Source="/oboi/oboi2.png" IsVisible="False" Opacity="0.7" x:Name="oboi2" Width="2300" Height="2300" Grid.Column="1" Grid.Row="3"/>
+		<Image Source="/oboi/oboi3.jpg" IsVisible="False" Opacity="0.7" x:Name="oboi3" Width="2300" Height="2300" Grid.Column="1" Grid.Row="3"/>
         <CheckBox Content="⬅ Вы Аутист???" FontSize="26" VerticalAlignment="Center" Margin="11 5 0 0"  IsCheckedChanged="CheckBox_IsCheckedChanged" x:Name="sas"/>
 			
         <Border Background="White" Width="300" Height="80" VerticalAlignment="Bottom"  Opacity="0.97" Padding="5" CornerRadius="50" ZIndex="-1" Grid.Column="1" Grid.Row="1"/>
 			
-        
+        <Border x:Name="mag1"  Background="Gray" IsVisible="True" Width="850" ZIndex="2" CornerRadius="50" VerticalAlignment="Center" HorizontalAlignment="Right" Height="1400" Grid.Row="2" Grid.Column="2">
+			<Grid ShowGridLines="True" RowDefinitions= "170 * * 100 200 100 * *" ColumnDefinitions="* * * *">
+				<Button CornerRadius="100" Content="Ⓜ️" FontSize="100" Grid.Column="4" Grid.Row="2" VerticalAlignment="Top" Margin="0 0 0 0" Click="Button_Click_2"/>
+				<Image Source="/oboi/oboi1.png" Grid.Column="0" VerticalAlignment="Bottom" Grid.Row="2"/>
+                <Button x:Name="ob1" FontSize="26" Click="Oboi_click1" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="3" Content="купить - 5000" />
+				<Image Source="/oboi/oboi2.png" Grid.Column="1" VerticalAlignment="Bottom" Grid.Row="2"/>
+                <Button x:Name="ob2" FontSize="26" Click="Oboi_click2" HorizontalAlignment="Center" Grid.Column="1" Grid.Row="3" Content="купить - 5000" />
+				<Image Source="/oboi/oboi3.jpg" Grid.Column="2" VerticalAlignment="Bottom" Grid.Row="2"/>
+                <Button x:Name="ob3" FontSize="26" Click="Oboi_click3" HorizontalAlignment="Center" Grid.Column="2" Grid.Row="3" Content="купить - 5000" />
+                
+            </Grid>
+        </Border>
         <TextBlock Foreground="Black" ZIndex="1" Text="0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="60" x:Name="gog"   />
         
 
-        
+        <Button Content="Ⓜ️" FontSize="100" Grid.Column="3" Grid.Row="0" CornerRadius="100" Margin="350 0 0 0" Click="Button_Click_1"/>
         <Button CornerRadius="50" HorizontalAlignment="Center" Content="Subscribe" Background="Red" Grid.Row="3" Grid.Column="1"  Width="600" Height="165" VerticalAlignment="Center"  FontSize="120" Click="Button_Click" Focusable="False"/>
         <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="6">
 			<Label Content="Пароль:" FontSize="20" VerticalAlignment="Center" Margin="0 0 3 0"/>

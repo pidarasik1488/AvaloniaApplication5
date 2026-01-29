@@ -8,11 +8,17 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="ddd.jpg" />
+    <None Remove="oboi\oboi1.png" />
+    <None Remove="oboi\oboi2.png" />
+    <None Remove="oboi\oboi3.jpg" />
     <None Remove="sss.jpg" />
     <None Remove="www.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AvaloniaResource Include="ddd.jpg" />
+    <AvaloniaResource Include="oboi\oboi1.png" />
+    <AvaloniaResource Include="oboi\oboi2.png" />
+    <AvaloniaResource Include="oboi\oboi3.jpg" />
     <AvaloniaResource Include="sss.jpg" />
     <AvaloniaResource Include="www.jpg" />
   </ItemGroup>
