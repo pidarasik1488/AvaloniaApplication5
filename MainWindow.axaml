@@ -19,8 +19,8 @@
 			
         <Border Background="White" Width="300" Height="80" VerticalAlignment="Bottom"  Opacity="0.97" Padding="5" CornerRadius="50" ZIndex="-1" Grid.Column="1" Grid.Row="1"/>
 			
-        <Border x:Name="mag1"  Background="Gray" IsVisible="True" Width="850" ZIndex="2" CornerRadius="50" VerticalAlignment="Center" HorizontalAlignment="Right" Height="1400" Grid.Row="2" Grid.Column="2">
-			<Grid ShowGridLines="True" RowDefinitions= "170 * * 100 200 100 * *" ColumnDefinitions="* * * *">
+        <Border x:Name="mag1"  Background="Gray" IsVisible="False" Width="850" ZIndex="2" CornerRadius="50" VerticalAlignment="Center" HorizontalAlignment="Right" Height="1400" Grid.Row="2" Grid.Column="2">
+			<Grid ShowGridLines="False" RowDefinitions= "170 * * 100 200 100 * *" ColumnDefinitions="* * * *">
 				<Button CornerRadius="100" Content="Ⓜ️" FontSize="100" Grid.Column="4" Grid.Row="2" VerticalAlignment="Top" Margin="0 0 0 0" Click="Button_Click_2"/>
 				<Image Source="/oboi/oboi1.png" Grid.Column="0" VerticalAlignment="Bottom" Grid.Row="2"/>
                 <Button x:Name="ob1" FontSize="26" Click="Oboi_click1" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="3" Content="купить - 5000" />
